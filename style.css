@@ -1,0 +1,71 @@
+input[type=text] {
+  border: 2px solid silver;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+}
+input[type=color] {
+  border: 1px solid silver;
+  border-radius: 8px;
+  width: 100px;
+  padding: 5px;
+  margin-top: 10px;
+}
+select {
+  border: 2px solid silver;
+  border-radius: 8px;
+  width: 225px;
+  padding: 10px;
+  margin-top: 10px;
+}
+select[multiple] {
+  border: 2px solid silver;
+  border-radius: 8px;
+  width: 90%;
+  padding: 10px;
+}
+button {
+  color: white;	
+  background-color: #555555;	
+  border-radius: 8px;
+  display: inline-block;
+  padding: 12px 28px;
+  text-align: center;
+  margin: 10px;
+ 
+}
+fieldset {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+form {
+  border: 3px solid silver;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+h1 {
+ text-align: center;
+ font-size: 16px;
+ font-family: Verdana;
+}
+span {
+ border: 2px solid silver;
+ border-radius: 4px;
+ padding: 5px 10px;
+ margin-left: 130px;
+ 
+}
+textarea{
+  border: 2px solid silver;
+  border-radius: 8px;
+  padding: 10px;
+}
+div{
+  margin: 10px;	
+}
+
