@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+<title>Форма отзыва</title>
+</head>
+<body>
+<h1>Форма отзыва</h1>
+<form>
+
+<fieldset>
+<legend>Личные данные</legend>
+<div style="float:left">ID отзыва<br>
+<input type = "text"  name = "ID отзыва" value =  "12345" disabled> </div>
+<div style="float:left">Имя путешественника<br>
+<input type = "text"  name = "Имя путешественника" value =  "Кекс"> </div>
+</fieldset>
+
+<fieldset>
+<legend>Отзыв о поездке</legend>
+<div style="float:left">Страна визита<br>
+<input type = "text"  name = "ID отзыва" value =  "Норвегия"> </div>
+<div style="float:left">Город<br>
+<select>
+<option>Осло</option>
+<option>Олесунд</option>
+<option>Берген</option>
+</select></div>
+
+<div style="clear:left">Оценка поездки <span id="rangeValue" >10</span></div><br> 
+0
+<input type="range" min="1" max="10" step="1" 
+    onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+  <datalist id="rangeList">
+  <option value="0" label="0">
+  <option value="1" label="1">
+  <option value="2" label="2">
+  <option value="3" label="3">
+  <option value="4" label="4">
+  <option value="5" label="5">
+  <option value="6" label="6">
+  <option value="7" label="7">
+  <option value="8" label="8">
+  <option value="9" label="9">
+  <option value="10" label="10">
+</datalist>
+10
+
+  
+<div style="clear:left">Текст отзыва</div>
+  <textarea name="comments" cols="70" rows="6">
+  Введите свой отзыв...</textarea>
+</fieldset>
+
+<fieldset>
+<legend>Оценка отеля</legend>
+<div style="float:left">Название отеля<br>
+<input type = "text"  name = "Название отеля" placeholder =  "Название по-английски"> </div>
+<div style="float:left">Дата въезда<br>
+<input type = "text"  name = "Дата въезда" placeholder =  "В формате дд-мм-гггг"></div>
+<div style="float:left">Цвет кровати<br>
+<input type = "color"  name = "Цвет кровати" value =  "#ff0000"></div>
+<div style="float:left">Оценка обедов<br>
+<select>
+<option>Подушечки оближешь</option>
+<option>Сносно</option>
+<option>Мышь была сырая</option>
+</select></div>
+
+<div style="clear:left">Самая вкусная рыба<br>
+<select name="select" size="5" multiple>
+    <option value="s1" selected>Норвежский лосось</option>
+    <option value="s2">Зубатка</option>
+    <option value="s3" selected>Морской окунь</option>
+    <option value="s4">Карась</option>
+	<option value="s5">Зеркальный карп</option>
+   </select></div>
+</fieldset>
+</form>
+<div style="margin-left:180px">
+  <button>Оценить</button>
+  <button>Сбросить</button>
+</div>
+</body>
+</html>
